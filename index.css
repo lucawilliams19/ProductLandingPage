@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url('img/batman-gotham.jpg');
+    background-color: blue;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-self: stretch;
+}
+
+#header{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    z-index: 99;
+}
+
+#header-img{
+    width: 70px;
+    height: 70px;
+}
+
+@media(max-width: 700px){
+    .nav,ul{
+        background: whitesmoke;
+        border-radius: 5px;
+        flex-wrap: wrap;
+    }
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+    list-style: none;
+}
+
+.video-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.buffer{
+    height: 1000px;
+}
